@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+{% load static %}
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+		<script src="https://kit.fontawesome.com/d3d8a72da1.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+        <noscript><link rel="stylesheet" href="{% static 'css/noscript.css' %}?after" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="{% static 'images/logo.svg' %}" alt="" /></span>
+						<h1>Minji Jun</h1>
+						<p>|&nbsp; (+82) 10-9283-5454 &nbsp;|&nbsp; pureb_9924@naver.com &nbsp;|</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+{#							<li><a href="#first">Skills & Language</a></li>#}
+							<li><a href="#second">Achievements & Projects</a></li>
+							<li><a href="#cta">Grades</a></li>
+                            <li><a href="#footer">And More</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Education</h2>
+										</header>
+										<p>
+                                            March 2019 ~ Present<br>
+                                            Ansan, Gyeonggi, Republic of Korea <br>
+                                            <b>BE expected in Computer Science,<br>
+                                                Hanyang University</b>
+                                        </p>
+                                        <p>
+                                            March 2015 ~ Feb 2018<br>
+                                            Incheon, Republic of Korea<br>
+                                            <b>Hanuel Academy, Graduate</b>
+                                        </p>
+
+									</div>
+									<span class="image"><img src="{% static 'images/profile-image.jpeg' %}" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Skills -->
+{#							<section id="first" class="main special">#}
+{#								<header class="major">#}
+{#									<h2>Skills</h2>#}
+{#								</header>#}
+{#								<ul class="features">#}
+{#									<li>#}
+{#										<h3><b>Programming Language</b></h3>#}
+{#                                        <p>Python </p>#}
+{#                                        <p>C++</p>#}
+{#                                        <p>Java</p>#}
+{##}
+{#									</li>#}
+{#									<li>#}
+{#                                        <h3><b>Machine Learning</b></h3>#}
+{#										<p>PyTorch</p>#}
+{#                                        <p>Numpy</p>#}
+{#                                        <p>OpenCV</p>#}
+{#                                    </li>#}
+{#									<li>#}
+{#                                        <h3><b>Web & other</b></h3>#}
+{#										<p>Html </p>#}
+{#                                        <p>CSS</p>#}
+{#                                        <p>QT</p>#}
+{#                                    </li>#}
+{#								</ul>#}
+{#                                <header class="major">#}
+{#									<h2>Languages</h2>#}
+{#								</header>#}
+{#                                <ul class="features">#}
+{#									<li>#}
+{#										<h3><b>Korean</b></h3>#}
+{#										<p>Reading</p>#}
+{#                                        <p>Listening</p>#}
+{#                                        <p>Speaking</p>#}
+{#                                        <p>Writing</p>#}
+{#                                    </li>#}
+{#									<li>#}
+{#										<h3><b>English</b></h3>#}
+{#										<p>Reading</p>#}
+{#                                        <p>Listening</p>#}
+{#                                        <p>Speaking</p>#}
+{#                                        <p>Writing</p>#}
+{#                                    </li>#}
+{#								</ul>#}
+{#							</section>#}
+
+						<!-- Projects -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Achievements & Projects</h2>
+
+								</header>
+								<ul class="statistics">
+									<li class="style1"><a href="https://pureb9924.notion.site/_-e4cf3c44eeff4189b4179739bef215b3?pvs=4">
+                                        <span class="icon solid fa-palette"></span>
+										<strong>Capstone</strong>
+                                    </a></li>
+									<li class="style2"><a href="https://github.com/orgs/HYUSpeech/repositories">
+                                        <span class="icon solid fa-microphone"></span>
+										<strong>STT</strong>
+                                    </a></li>
+                                    <li class="style3"><a href="https://pureb9924.notion.site/SEA-ME-5eb9c2d0f2314563970ebc4ecafb73d6?pvs=4">
+                                        <span class="icon solid fa-car"></span>
+										<strong>SEA:ME</strong>
+                                    </a></li>
+									<li class="style4"><a href="https://github.com/minji9924/">
+                                        <span class="icon brands fa-github"></span>
+										<strong>ETC</strong>
+                                    </a></li>
+								</ul>
+								<ul class="project-features">
+                                    <li>
+                                        <h3>Capstone Project</h3>
+                                        <p>June 2022 - May 2023</p>
+                                        <p>Develop testing method and diagnosing algorithm for color blindness and
+                                            implement customized color filter for individual users in Android/iOS app.</p>
+                                    </li>
+                                    <li>
+                                        <h3>STT Project</h3>
+                                        <p>March 2023 - Jun 2023</p>
+                                        <p>Implement a Korean STT model with KoSpeech Dataset and
+                                            develop Tuner Web application for Hearing impaired using STT model and google api.</p>
+                                    </li>
+                                    <li>
+                                        <h3>SEA:ME Hackathon</h3>
+                                        <p>July 2023</p>
+                                        <p>Rewarded in ‘2023 SEA:ME Summer Hackathon’ organized by
+                                            ‘COSS-kookmin univ and Shared AI-Robotics – Hanyang univ’
+                                            for implementing In-Vehicle Infotainment System.</p>
+                                    </li>
+                                    <li>
+                                        <h3>Other Projects</h3>
+                                        <p>March 2019 - Current</p>
+                                        <p>About other projects I've done during from March 2019.
+                                            There are both individual projects and team projects.
+                                            <br>Visit my Github page for other projects.
+                                        </p>
+
+                                    </li>
+                                </ul>
+							</section>
+
+						<!-- Grades -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Grades</h2>
+                                </header>
+                                {% include 'mainpage/graph-grade.html' %}
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Try Handwriting Recognition!</h2>
+                            <p>Use a pretrained AI mode from Intel Open Model Zoo.<br>
+                                Upload Your Handwriting And Check the Result.
+                            </p>
+                            <ul class="actions">
+								<li><a href="{% url 'example' %}" class="button">Try Here</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>About Me</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(+82) 010-9283-5454 </dd>
+								<dt>Email</dt>
+								<dd><a href="#">pureb_9924@naver.com</a></dd>
+							</dl>
+							<ul class="icons">
+                                <li><a href="https://github.com/minji9924?tab=repositories" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.instagram.com/minjj_9924/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/browser.min.js' %}"></script>
+			<script src="{% static 'js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
