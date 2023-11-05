@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(74%ko=g!cc5)+2*=w48e($assh8xmpbt)^gw_h_mky%18swc(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -82,8 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'grades',
         'USER': 'root',
-        'PASSWORD': 'alswl123',
-        'HOST': 'grades.c9qn7zl8eaco.ap-northeast-2.rds.amazonaws.com',
+        'PASSWORD': 'alswl11',
+        'HOST': 'localhost',
         'PORT': '3306'
 
     }
